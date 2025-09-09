@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Udemy Video Controls",
+  "version": "1.0",
+  "description": "Adds left arrow key rewind functionality to Udemy videos",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.udemy.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
